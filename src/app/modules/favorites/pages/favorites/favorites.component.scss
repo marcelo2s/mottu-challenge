@@ -1,0 +1,31 @@
+.favorites-container {
+    width: 100%;
+
+    > h1 {
+        font-family: var(--creepster);
+        font-size: 3rem;
+        color: #00B5CC;
+        text-shadow: 
+            2px 2px 0px #B2DF28, /* Sombra no canto inferior direito */
+            -2px 2px 0px #B2DF28, /* Sombra no canto inferior esquerdo */
+            2px -2px 0px #B2DF28, /* Sombra no canto superior direito */
+            -2px -2px 0px #B2DF28; /* Sombra no canto superior esquerdo */
+        margin-bottom: 3rem;
+    }
+
+    h2 {
+        font-family: var(--poppins);
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: var(--color-core-content);
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-family: var(--poppins);
+        font-weight: 400;
+        font-size: 1.125rem;
+        color: var(--color-core-content-low);
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,35 @@
+.card-container {
+    width: 224px;
+    height: 298px;
+    border-radius: 0.75rem;
+    background-color: var(--color-core-foreground);
+
+    .image {
+        width: 224px;
+        height: 224px;
+        background-color: aquamarine;
+        border-top-left-radius: 0.75rem;
+        border-top-right-radius: 0.75rem;
+    }
+
+    > .character-description {
+        padding: 0.75rem;
+
+        > span {
+            font-family: var(--creepster);
+            font-weight: 400;
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+            color: var(--color-core-content);
+        }
+        
+        > p {
+            font-family: var(--poppins);
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.4rem;
+            color: var(--color-core-border);
+        }
+    }
+
+}
