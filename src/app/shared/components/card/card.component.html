@@ -1,7 +1,7 @@
 <div class="card-container" fxLayout="column" fxLayoutAlign="none">
-    <div class="image"></div>
+    <img class="character-image" [src]="data.image" [alt]="data.name">
     <div class="character-description">
-        <span>Rick Sanchez</span>
-        <p>Human</p>
+        <span>{{ data.name }}</span>
+        <p>{{ data.species }}</p>
     </div>
 </div>

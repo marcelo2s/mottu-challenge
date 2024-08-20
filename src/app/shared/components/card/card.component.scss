@@ -1,13 +1,13 @@
 .card-container {
     width: 224px;
-    height: 298px;
+    min-height: 298px;
     border-radius: 0.75rem;
     background-color: var(--color-core-foreground);
+    overflow: hidden;
 
-    .image {
+    .character-image {
         width: 224px;
         height: 224px;
-        background-color: aquamarine;
         border-top-left-radius: 0.75rem;
         border-top-right-radius: 0.75rem;
     }

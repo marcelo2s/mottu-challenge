@@ -8,6 +8,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContentLayoutComponent } from './layout/content-layout/content-layout.component';
 import { HeaderComponent } from './layout/header/header.component';
+import { provideHttpClient } from '@angular/common/http';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 
 @NgModule({
@@ -22,7 +24,10 @@ import { HeaderComponent } from './layout/header/header.component';
     SharedModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    provideHttpClient(),
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

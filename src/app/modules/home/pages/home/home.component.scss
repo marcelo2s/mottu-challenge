@@ -1,5 +1,5 @@
 .home-container {
-    width: 100%;
+    min-width: 720px;
     > div {
         margin-bottom: 49px;
         h1 {
@@ -13,6 +13,12 @@
                 -2px -2px 0px #B2DF28; /* Sombra no canto superior esquerdo */
         }
     }
+
+    .character-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(224px, 1fr));
+        gap: 24px;
+    } 
 
     h2 {
         font-family: var(--poppins);

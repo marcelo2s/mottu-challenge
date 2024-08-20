@@ -3,10 +3,19 @@
         <h1>Início</h1>
         <app-search-input></app-search-input>
     </div>
-    <!-- <app-card></app-card> -->
-     <app-info-panel>
+    <div class="character-grid">
+        <ng-container *ngFor="let character of characters"> 
+            <app-card [data]="character"></app-card>
+        </ng-container>
+    </div>
+    <mat-paginator [length]="totalCharacters"
+                   [pageSize]="pageSize"
+                   [pageSizeOptions]="pageSizeOptions"
+                   (page)="pageChanged($event)">
+    </mat-paginator>
+    <!-- <app-info-panel>
         <h2>Nada foi encontrado</h2>
         <p>Tente realizar uma nova busca.</p>
-     </app-info-panel>
+    </app-info-panel> -->
 </div>
 
